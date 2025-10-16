@@ -4,10 +4,10 @@ import 'dart:async';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp exxtends statelessWidgets {
+class MyApp extends StatelessWidgets {
   const MyApp({super.key});
 
   @override
@@ -18,6 +18,8 @@ class MyApp exxtends statelessWidgets {
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
+      home: ClockScreen(),
+      debugShowCheckedModeBanner: false,
     )
   }
 }
